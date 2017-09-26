@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>header</title>
+	</head>
+	
+	<body>
+		<script>
+			function Validate(){
+				var txtName = document.getElementById("txt_name");
+				var button = document.getElementById("btnValidate");
+				var form = document.getElementById("testform");
+				if(txtName.value.trim() == ""){
+					var label = document.createElement("label");
+					label.setAttribute("for","txt_name");
+					form.insertBefore(label,button);
+					txtName.labels[1].innerHTML = "please input the name";
+					txtName.labels[1].setAttribute("style","font-size:9px;color:red");
+					}
+				}
+			</script>
+<form id="testform">
+	<label id="label" for="txt_name">name:</label>
+	<input id="txt_name">
+	<input type="button" id="btnValidate" value="check" onclick="Validate()"> 
+	</form>
 
+	</body>
+</html>

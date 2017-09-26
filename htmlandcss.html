@@ -1,1 +1,67 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="htmlandcssstyle.css" style="text/css" rel="stylesheet">
+</head>	
+<body>
+	<button id="tbt" onclick="goceshi()">back</button>
+	<form>
+		<input type="text" id="username">
+		<button id="qr" onclick="safe()">按钮</button>
+	</form>
+	<script>
+			function goceshi(){
+				history.back();
+			}
+			function safe(){
+				var name = document.getElementById("username").value;
+				if(name=="hello"){
+					history.go(-1);
+				}else{
+					alert("wrong username");
+				}
+			}
+	</script>	
+	<div class="container">
+		<div class="wrapper">
+			<div class="heading">
+				<div class="heading_nav">
+					<div class="heading_title">
+						学习前端
+					</div>
+					<div class="heading_navbar">
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="#">html</a></li>
+							<li><a href="#">css</a></li>
+							<li><a href="#">js</a></li>
+						</ul>											
+					</div>
+					<div class="heading_img">
+					  <img src="2.jpg">
+					</div>
+					<div class="heading_soptlight">
+						<form>
+							<input type="text">
+						</form>
+					</div>
+								
+				</div>
+			</div>
+			<div class="body">
+				<div class="body_title">
+					<h3>熟悉前端内容</h3>
+					<p>勤查字典，勤看代码</p>
+				</div>
+				<hr/>
+				<hr/>
+			</div>
+			
+		</div>
+		<div class="footing">
+		  @learning forever
+		</div>
+	</div>
+	
+</body>	
+</html>

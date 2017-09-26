@@ -1,1 +1,227 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+<title>
+</title>
+<link href="MyCss.css" type="text/css" rel="stylesheet">
+</head>
 
+<body>
+	<script>	
+		function setValue(){
+			var label = document.getElementById("label");
+			var textbox = label.control;
+			textbox.value = "000010";
+			}			
+		function AD(){
+			var control = document.forms[0]['text'];
+			var Direction = control.selectionDirection;
+			alert(Direction);
+			}
+		</script>
+		
+		<section>
+			<h1>control,placeholder,list,autocomplete</h1>
+			
+<form>
+<label id="label">
+Zip code
+<input id="txt_zip" maxlength="6">
+<small>please enter 6 numbers</small>
+</label>
+<input type="button" value="default settings" onclick="setValue()">
+<br/>
+<input type="text" placeholder="please enter numbers">
+<br/>
+<input type="text" name="greeting" list="greetings" autocomplete="off">
+<datalist id="greetings" style="display:none">
+	<option value="HTML5 Study">HTML5 Study</option>
+		<option value="Android Study">Android Study</option>
+	<option value="IOS">IOS Study</option>
+</datalist>
+<h2>pattern</h2>
+please enter content
+<input pattern="[A-Z]{3}" name="part">
+<input type="submit">
+<h1>selectionDirection</h1>
+<input type="test" name="text">
+<input type="button" value="click me" onclick="">
+</form>
+</section>
+<h2>indeterminate</h2>
+<input type="checkbox" indeterminate id="cb">property
+<script>
+	var cb = document.getElementById("cb");
+	cb.indeterminate = true;
+	</script>
+<br/>
+<form action="test.jsp" method="post">
+	ÐÕÃû£º<input type="text" name="name">
+	<input type="image" src="a.gif" alt="edit" width="20" height="20">
+	</form>
+	<p id="pid">hello css<a href="http://www.jikexueyuan.com">academy</a></p>
+	<div id="divid">
+		this is a div<p>this is the first div</p>
+		</div>
+		<p class="pclass">this is an effect by class </p>
+		<p title="te">Attribute selectors</p>
+		<p title="T">Attribute selectors</p>
+		<table id="tb">
+			<tr>
+				<th>name</th>
+				<th>age</th>
+				<th>sex</th>
+				</tr>
+			<tr>
+				<td>Tom</td>
+				<td>20</td>
+				<td>male</td>
+				</tr>
+				<tr class="alt">
+				<td>Tom</td>
+				<td>20</td>
+				<td>male</td>
+				</tr>
+				<tr>
+				<td>Tom</td>
+				<td>20</td>
+				<td>male</td>
+				</tr>
+				<tr class="alt">
+				<td>Tom</td>
+				<td>20</td>
+				<td>male</td>
+				</tr>
+			</table>
+			<div id="position1"></div>
+			<div id="position2"></div>
+			
+			<div class="container">
+				<div class="bd">
+					<div class="pd">
+						<div class="content">hello</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="container1">
+				<div class="bd1">
+					<div class="pd1">
+						<div class="content1">hello</div>
+						</div>
+					</div>
+				</div>
+				
+<div class="divdiv"></div>
+<ul class="he">
+	<li><a href="#">hello</a></li>
+		<li><a href="#">hello</a></li>
+			<li><a href="#">hello</a></li>
+				<li><a href="#">hello</a></li>
+	</ul>
+	<div class="containerimg">
+		<div class="image">
+			<a href="#" target="_self"> 
+				<img src="timg.jpg" alt="scenery" width="200px" height="200px">
+			</a>
+			<div class="text">beautiful place</div>
+			</div>		
+			<div class="image">
+			<a href="#" target="_self"> 
+				<img src="timg.jpg" alt="scenery" width="200px" height="200px">
+			</a>
+			<div class="text">beautiful place</div>
+			</div>		
+			<div class="image">
+			<a href="#" target="_self"> 
+				<img src="timg.jpg" alt="scenery" width="200px" height="200px">
+			</a>
+			<div class="text">beautiful place</div>
+			</div>		
+			<div class="image">
+			<a href="#" target="_self"> 
+				<img src="timg.jpg" alt="scenery" width="200px" height="200px">
+			</a>
+			<div class="text">beautiful place</div>
+			</div>		
+		</div>
+		<p class="p1">This is a web page</p>
+				<p class="p2">This is a web page</p>
+						<p class="p1 p2">This is a web page</p>
+		<p>This is a <strong>web <i>hello </i>hello</strong> page</p>
+		<div class="div11">ÕâÊÇÒ»¸ö³õÊ¼Ð§¹û</div>
+		<div class="div22">¸Ä±äºóµÄÐ§¹û</div>
+		<div class="div33">¶¯»­Ð§¹û</div>
+		<div class="div44">
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			¶àÁÐµÄÊ¹ÓÃ£¬·Ö¶àÉÙ¸öÁÐ£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¾à£¬Ã¿¸öÁÐÖ®¼äµÄ¼ä¸ôÏß
+			</div>
+			<div class="div55">
+				<div><img src="timg.jpg">
+					<p>Ìí¼Ó±êÇ©</p>
+					</div>
+					<div><img src="2.jpg"></div>
+						<div><img src="3.jpg"></div>
+							<div><img src="4.jpg"></div>
+								<div><img src="5.jpg">
+									<p>Ìí¼Ó±êÇ©</p>
+									</div>
+									<div><img src="6.jpg"></div>
+					<div><img src="timg.jpg"></div>
+					<div><img src="2.jpg"></div>
+						<div><img src="3.jpg">
+							
+							</div>
+							<div><img src="4.jpg">
+								<p>Ìí¼Ó±êÇ©</p>
+								</div>
+								<div><img src="5.jpg"></div>
+									<div><img src="6.jpg"></div>
+					<div><img src="timg.jpg"></div>
+					<div><img src="2.jpg"></div>
+						<div><img src="3.jpg"></div>
+							<div><img src="4.jpg"></div>
+								<div><img src="5.jpg"></div>
+									<div><img src="6.jpg"></div>									
+				</div>
+</body>
+</html>

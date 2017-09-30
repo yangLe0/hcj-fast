@@ -17,7 +17,7 @@
 		widnow.event.returnValue = false;
 	</script>
 </head>	
-<!--<body <!--onload="mgs()"--> <!--oncontextmenu="return hideContextmenu()"-->
+<!--<body onload="mgs()" oncontextmenu="return hideContextmenu()">-->
 	<body onload="myWin()"> //onload="startTime()"
 		<div id="timetxt"></div>
 		//32234018+yangLe0@users.noreply.github.com
@@ -43,7 +43,7 @@
 	</script>
 	<p>i = 10,j = 10;i+j=?</p>
 	<p id="sumid"></p>
-	<button onclick="mysum()">½á¹û</button>
+	<button onclick="mysum()">ç»“æœ</button>
 	<script>
 		function mysum(){
 			var i = 10;
@@ -54,15 +54,15 @@
 	</script>
 	<form>
 		<input id="txt" type="text">
-		<input id="btn" type="button" onclick="demo()" value="°´Å¥">
+		<input id="btn" type="button" onclick="demo()" value="æŒ‰é’®">
 	</form>
 	<script>
 		function demo(){
 			try{
 				var e = document.getElementById("txt").value;
-				//document.getElementsByTagName("p");//ÏàÍ¬ÔªËØÖĞµÄµÚÒ»¸ö
+				//document.getElementsByTagName("p");//ç›¸åŒå…ƒç´ ä¸­çš„ç¬¬ä¸€ä¸ª
 				if(e == ""){
-					throw "ÓÃ»§ÊäÈëÒì³£==¿Õ";
+					throw "ç”¨æˆ·è¾“å…¥å¼‚å¸¸==ç©º";
 				}
 			}catch(err){
 				alert(err);
@@ -79,7 +79,7 @@
 		}
 	</script>
 	<form>
-		<input type="text" onchange="alert('changeÄÚÈİ')">
+		<input type="text" onchange="alert('changeå†…å®¹')">
 		<input type="text" onselect="changeDemo(this)" onfocus="changeDemo2(this)">
 	</form>
 	<script>
@@ -90,29 +90,29 @@
 			bg.style.background = "#987687";
 		}
 		function mgs(){
-			alert("ÍøÒ³ÄÚÈİ¼ÓÔØÍê±Ï");
+			alert("ç½‘é¡µå†…å®¹åŠ è½½å®Œæ¯•");
 		}
 	</script>
-	<a id="aid" href="http://www.baidu.com">ÍøÒ³</a>
-	<button onclick="demo()">×ª»»</button>
+	<a id="aid" href="http://www.baidu.com">ç½‘é¡µ</a>
+	<button onclick="demo()">è½¬æ¢</button>
 	<script>
 		function demo(){
 			document.getElementById("aid").href="http://www.jikexueyuan.com"
 			document.getElementById("sumid").style.background = "blue";
 		}
 	</script>
-	<button id="btn1">¾ä±ú</button>
+	<button id="btn1">å¥æŸ„</button>
 	<script>
 		document.getElementById("btn1").addEventListener("click",function(){alert("haha")});
 		var x = document.getElementById("btn1");
-		x.addEventListener("click",hello); //¾ä±ú
+		x.addEventListener("click",hello); //å¥æŸ„
 		x.addEventListener("click",world);
 		x.removeEventListener("click",hello);
 		function hello(){
 			alert("hello");
 		}
 		function world(){
-			prompt("ÌáÊ¾ĞÅÏ¢","Ä¬ÈÏÖµ");
+			prompt("æç¤ºä¿¡æ¯","é»˜è®¤å€¼");
 		}
 	</script>
 	<!--<script>
@@ -129,8 +129,8 @@
 		}
 	</script>-->
 	<div id="div1">
-	<button id="btn3">ÊÂ¼ş·´Ó¦</button>
-	<p id="pid">divµÄpÔªËØ</p>
+	<button id="btn3">äº‹ä»¶ååº”</button>
+	<p id="pid">divçš„på…ƒç´ </p>
 	</div>
 	<script>
 		document.getElementById("btn3").addEventListener("click",showType);
@@ -143,16 +143,16 @@
 			
 		}
 	</script>
-	<h2 align=¡°center¡±>ä¯ÀÀÆ÷ÌØĞÔ</h2>
-	ä¯ÀÀÆ÷Ãû³Æ£º
+	<h2 align=â€œcenterâ€>æµè§ˆå™¨ç‰¹æ€§</h2>
+	æµè§ˆå™¨åç§°ï¼š
 	<script>
 		document.write(navigator.appName+"<br/>");
 	</script>
-	ä¯ÀÀÆ÷°æ±¾£º
+	æµè§ˆå™¨ç‰ˆæœ¬ï¼š
 	<script>
 		document.write(navigator.appVersion+"<br/>");
 	</script>
-	Ö§³ÖJavascript£º
+	æ”¯æŒJavascriptï¼š
 	<script>
 		document.write(TrueFalse(navigator.javaEnabled())+"<br/>");
 		document.write(navigator.appCodeName+"<br/>");
@@ -160,8 +160,8 @@
 		document.write(navigator.mimeTypes+"<br/>");
 		document.write(navigator.plugins+"<br/>");
 	</script>
-	<a href="http://www.baidu.com" onMouseOver="window.status='Welcome'; return true" font-size="30px" id="aid1">Ò»¸öaÁ´½ÓÊôĞÔstatusÎ´ÊµÏÖ</a>
-	<button id="btn2">¹Ø±Õ</button>
+	<a href="http://www.baidu.com" onMouseOver="window.status='Welcome'; return true" font-size="30px" id="aid1">ä¸€ä¸ªaé“¾æ¥å±æ€§statusæœªå®ç°</a>
+	<button id="btn2">å…³é—­</button>
 	<br/>
 	<script>
 		document.getElementById("aid1").addEventListener("click",function(event){event.preventDefault();});
@@ -180,7 +180,7 @@
 		document.write("name:"+son._name+",age:"+son._age+"    ");
 		var str = "hello world";
 		var str1 = "hello jike xueyuan";
-		//document.write("       ×Ö·û³¤¶ÈÎª£º"+str1.length);
+		//document.write("       å­—ç¬¦é•¿åº¦ä¸ºï¼š"+str1.length);
 		//document.write(str.indexOf("world"));
 		//document.write(str1.match("jike"));
 		//document.write(str.replace("world","beautiful"));
@@ -210,7 +210,7 @@
 	<p name="pn">hello2</p>
 	<p name="pn">hello3</p>
 	<p name="pn">hello4</p>
-	<a id="aidaid" title="µÃµ½ÁËa±êÇ©µÄÊôĞÔ">great</a>
+	<a id="aidaid" title="å¾—åˆ°äº†aæ ‡ç­¾çš„å±æ€§">great</a>
 	<ul><li>1</li><li>2</li><li>3</li></ul>
 	<script>
 		function getName(){
@@ -227,7 +227,7 @@
 		}
 		function setAttr(){
 			var anode = document.getElementById("aidaid");
-			anode.setAttribute("title","¶¯Ì¬ÉèÖÃaµÄtitleÊôĞÔ");
+			anode.setAttribute("title","åŠ¨æ€è®¾ç½®açš„titleå±æ€§");
 			var attr = anode.getAttribute("title");
 			alert(attr);
 		}
@@ -245,14 +245,14 @@
 			var body = document.body;
 			var input = document.createElement("input");
 			input.type = "button";
-			input.value = "×Ô¶¨Òå";
+			input.value = "è‡ªå®šä¹‰";
 			body.appendChild(input);
 		}
 		function addNode(){
 			var div = document.getElementById("div1");
 			var node = document.getElementById("pid");
 			var newnode = document.createElement("p");
-			newnode.innerHTML = "¶¯Ì¬Ìí¼ÓµÚÒ»¸öpÔªËØ";
+			newnode.innerHTML = "åŠ¨æ€æ·»åŠ ç¬¬ä¸€ä¸ªpå…ƒç´ ";
 			div.insertBefore(newnode,node);
 		}
 		function removeNode(){
@@ -264,11 +264,11 @@
 			var height = document.documentElement.offsetHeight;
 			alert(width + ","+height);
 		}
-		document.write("¿í¶È"+window.innerWidth+"£¬¸ß¶È£º"+innerHeight);
+		document.write("å®½åº¦"+window.innerWidth+"ï¼Œé«˜åº¦ï¼š"+innerHeight);
 		
 	</script>
-	<button id="opb" onclick="opbClicked()">go htmlandcss´ò¿ª</button>
-	<button id="btnt" onclick="stopWin()">Ê±¼ä</button>
+	<button id="opb" onclick="opbClicked()">go htmlandcssæ‰“å¼€</button>
+	<button id="btnt" onclick="stopWin()">æ—¶é—´</button>
 	<p id="ptime"></p>
 	<a href="htmlandcss.html">go to htmlandcss</a>
 	<button id= "bfb" onclick="goob()">forward</button>

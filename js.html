@@ -18,7 +18,7 @@
 	</script>
 </head>	
 <!--<body onload="mgs()" oncontextmenu="return hideContextmenu()">-->
-	<body onload="myWin()"> <!--onload="startTime()"-->
+	<body> <!--onload="myWin()" onload="startTime()"-->
 		<div id="timetxt"></div>
 		<!--32234018+yangLe0@users.noreply.github.com-->
 	<script>
@@ -270,6 +270,17 @@
 	<button id="opb" onclick="opbClicked()">go htmlandcss打开</button>
 	<button id="btnt" onclick="stopWin()">时间</button>
 	<p id="ptime"></p>
+	<button id="getLoc" onclick="getLoc()">Location按钮</button>
+	<p id="pLoc">pLoc</p>
+	<script>
+		function getLoc(){
+			location.assign("http://www.baidu.com");
+			document.getElementById("pLoc").innerHTML = "pathname: " + window.location.pathname + "		port: " +
+			+ window.location.port + "		protocol: " + window.location.protocol + "		href: " + window.location.href 
+			+ "		hostname: " + window.location.hostname;
+			
+		}
+	</script>
 	<a href="htmlandcss.html">go to htmlandcss</a>
 	<button id= "bfb" onclick="goob()">forward</button>
 	<script>

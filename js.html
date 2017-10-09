@@ -274,12 +274,13 @@
 	<p id="pLoc">pLoc</p>
 	<script>
 		function getLoc(){
-			location.assign("http://www.baidu.com");
+			//location.assign("http://www.baidu.com");
 			document.getElementById("pLoc").innerHTML = "pathname: " + window.location.pathname + "		port: " +
 			+ window.location.port + "		protocol: " + window.location.protocol + "		href: " + window.location.href 
 			+ "		hostname: " + window.location.hostname;
-			
-		}
+			}
+		document.write("可用高度："+screen.availHeight+"，可用宽度："+screen.availWidth);
+		document.write(" 高度："+screen.height+"，宽度："+screen.width);			
 	</script>
 	<a href="htmlandcss.html">go to htmlandcss</a>
 	<button id= "bfb" onclick="goob()">forward</button>
@@ -316,6 +317,62 @@
 		<li><span>.</span></li>
 		<li><span class="narrow">.</span></li>
 	</ul>
-	
+	<div id="container">
+		<div class="box">
+			<div class="box_img">
+				<img src="2.jpg">
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_img">
+				<img src="3.jpg">
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_img">
+				<img src="4.jpg">
+			</div>
+		</div>
+				<div class="box">
+			<div class="box_img">
+				<img src="5.jpg">
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_img">
+				<img src="6.jpg">
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_img">
+				<img src="2.jpg">
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_img">
+				<img src="3.jpg">
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_img">
+				<img src="4.jpg">
+			</div>
+		</div>
+				<div class="box">
+			<div class="box_img">
+				<img src="5.jpg">
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_img">
+				<img src="6.jpg">
+			</div>
+		</div>
+		<div class="box">
+			<div class="box_img">
+				<img src="2.jpg">
+			</div>
+		</div>
+	</div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 *{
-  margin: 0px;
-  padding: 0px;
+  margin: 0px;//外边距
+  padding: 0px;//内边距
 }
 #container{
   position: relative;
@@ -11,7 +11,7 @@
 }
 .box_img{
   padding: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc;//灰色边框
   box-shadow: 0 0 5px #ccc;
   border-radius: 5px;
 }

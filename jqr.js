@@ -101,6 +101,7 @@ $(document).ready(function(){
 });
 */
 
+/*
 //dom
 $(document).ready(function(){
 //	$("#clickMeBtn").click(function(){
@@ -119,3 +120,32 @@ $(document).ready(function(){
 		alert("text:" + $("#aid").attr("id"));//attr可以获取到属性
 	});
 });
+*/
+
+/*
+//setting
+$(document).ready(function(){
+	$("#clickMeBtn").click(function(){
+		//更改元素属性的值
+		$("#pid").text("night");
+	});
+	$("#clickMeBtn").click(function(){
+		$("#pid1").html("<a href='http://www.baidu.com'>百度</a>");
+	});
+	$("#clickMeBtn").click(function(){
+		$("#it").val("更改后的值");
+	});
+	$("#clickMeBtn").click(function(){
+		$("#aid1").attr({
+			"href":"http://www.bilibili.com",
+			"title":"hello"
+			});
+	});
+	$("#btn").click(function(){
+		$("#pid2").text(function(i,ot){//回调方法，i是当前元素下标，ot是最初原始内容
+			return "old:"+ot+" new:新添加内容|"+(i);
+		});
+	});
+});
+*/
+

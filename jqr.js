@@ -149,3 +149,79 @@ $(document).ready(function(){
 });
 */
 
+/*
+//add content(添加内容append,prepend,before,after)
+$(document).ready(function(){
+	$("#btn").click(function(){
+		$("#pid2").append("|this is append add content|");
+		$("#pid2").prepend("|this is prepend add content|");
+		$("#pid2").before("|this is before add content|");
+		$("#pid2").after("|this is after add content|");
+	});
+});
+//添加元素html,jQuery,DOM
+function appendText(){
+	var text1 = "<p>p元素0</p>";
+	var text2 = $("<p></p>").text("p元素1");
+	var text3 = document.createElement("p");
+	text3.innerHTML = "p元素2";
+	$("body").append(text1,text2,text3);
+}
+*/
+
+/*
+//delete(remove,empty)
+$(document).ready(function(){
+	$("#clickMeBtn").click(function(){
+//		$("#div").remove();//全部删除
+		$("#div").empty();//删除子元素
+	});
+});
+*/
+
+/*
+//Animation
+$(document).ready(function(){
+	$("#clickMeBtn").click(function(){
+		$("p").hide(1000);//隐藏
+	});
+	$("#clickMeBtn").click(function(){
+		$("p").show(1000);//显示
+	});
+	$("#btn").click(function(){
+		$("p").toggle(1000);//隐藏/显示
+	});
+	for(var i = 0;i<5;i++){
+		$("<div>").appendTo(document.body);
+	}
+	$("div").click(function(){
+		$(this).hide(2000,function(){
+			$(this).remove();
+		});
+	});
+});
+*/
+
+//fade
+$(document).ready(function(){
+	$("#in").on("click",function(){
+		$("#div1").fadeIn(1000);
+		$("#div2").fadeIn(1000);
+		$("#div3").fadeIn(1000);
+	});
+	$("#out").on("click",function(){
+		$("#div1").fadeOut(1000);
+		$("#div2").fadeOut(1000);
+		$("#div3").fadeOut(1000);
+	});
+	$("#toggle").on("click",function(){
+		$("#div1").fadeToggle(1000);
+		$("#div2").fadeToggle(1000);
+		$("#div3").fadeToggle(1000);
+	});
+	$("#to").on("click",function(){//透明度0-1
+		$("#div1").fadeTo(1000,0);
+		$("#div2").fadeTo(1000,0.5);
+		$("#div3").fadeTo(1000,1);
+	});
+});

@@ -5,12 +5,22 @@
   <script src="jquery-3.2.1.min.js"></script>
   <script src="jqr.js"></script>
   <style type="text/css">
-  div{
-	width: 50px;
-	height: 50px;
-	background: #ece023;
-	float: left;
-	margin: 2px;
+//  div{
+//	width: 50px;
+//	height: 50px;
+//	background: #ece023;
+//	float: left;
+//	margin: 2px;
+//  }
+  #content,#flipshow,#fliphide,#fliptoggle{
+	padding: 5px;
+	text-align: center;
+	background-color: #ece023;
+	border: solid 1px #ece999;
+  }
+  #content{
+	padding: 50px;
+	display: none;
   }
   </style>
 </head>
@@ -45,6 +55,13 @@
   <div id="div1" style="display:none"></div>
   <div id="div2" style="display:none"></div>
   <div id="div3" style="width: 80px;height: 80px;display:none"></div>
- 
+  <br/>
+	<div id="flipshow">出现</div>
+	<div id="fliphide">隐藏</div>
+	<div id="fliptoggle">隐藏/显示</div>
+	<div id="content">Hello World</div>
+  <br/>
+  <p>hello world</p>
+  <button id="">回调</button>
 </body>
 </html>

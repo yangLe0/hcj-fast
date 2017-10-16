@@ -202,6 +202,7 @@ $(document).ready(function(){
 });
 */
 
+/*
 //fade
 $(document).ready(function(){
 	$("#in").on("click",function(){
@@ -225,3 +226,33 @@ $(document).ready(function(){
 		$("#div3").fadeTo(1000,1);
 	});
 });
+*/
+
+/*
+//move
+$(document).ready(function(){
+	$("#flipshow").click(function(){
+		$("#content").slideDown(1000);
+	});
+	$("#fliphide").click(function(){
+		$("#content").slideUp(1000);
+	});
+	$("#fliptoggle").click(function(){
+		$("#content").slideToggle(1000);
+	});
+});
+*/
+
+/*
+//callback
+$(document).ready(function(){
+	$("button").click(function(){
+		// $("p").hide(1000,function(){//单个动画
+			// alert("动画结束，这个方法被称为回调");
+		// }); 
+		$("p").css("color","red").slideUp(1000).slideDown(1000);//多个动画
+	});
+});
+*/
+
+

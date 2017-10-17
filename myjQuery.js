@@ -7,8 +7,9 @@ $.fn.myjq = function(){
 } */
 
 //noConflict
-$(document).ready(function(){
-	$("btn").on("click",function(){
-		
+$.noConflict();//消除掉$符号对于jQuery的缩写
+jQuery(document).ready(function(){
+	jQuery("#btn").on("click",function(){
+		jQuery("div").text("new Hello");
 	});
 });

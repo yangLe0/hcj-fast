@@ -1,0 +1,25 @@
+Pixi.js使用WebGL，是一个超快的HTML5 2D渲染引擎。作为一个Javascript的2D渲染器，Pixi.js的目标是提供一个快速的、轻量级而且是兼任所有设备的2D库。提供无缝 Canvas 回退，支持主流浏览器，包括桌面和移动。 Pixi渲染器可以开发者享受到硬件加速，但并不需要了解WebGL。 
+
+document.querySelector("#demo");
+获取文档中 id="demo" 的元素；
+querySelector() 方法返回文档中匹配指定 CSS 选择器的一个元素。
+注意： querySelector() 方法仅仅返回匹配指定选择器的第一个元素。如果你需要返回所有的元素，请使用 querySelectorAll() 方法替代。
+参考：
+http://www.cnblogs.com/afrog/p/4056378.html
+
+
+function _inherits(subClass, superClass) {
+	if (typeof superClass !== "function" && superClass !== null) {
+		throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+		} 
+	subClass.prototype = Object.create(superClass && superClass.prototype, {
+		constructor: {
+			value: subClass,
+			enumerable: false,
+			writable: true,
+			configurable: true
+		}
+	});
+	if (superClass) 
+		Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; 
+}

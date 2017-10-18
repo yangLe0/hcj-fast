@@ -1,0 +1,80 @@
+.style1{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}
+.style2{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+#div1{
+	width: 500px;
+	height: 200px;
+	border: 3px solid chocolate;
+}
+#div2{
+	width: 400px;
+	height: 150px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: 3px solid chocolate;
+}
+/* p{
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 150px;
+	height: 80px;
+	border: 3px solid chocolate;
+} */
+ul,li{
+	list-style: none;
+}
+ul{
+	padding: 0px;//chrome,firefox,opera,safrie覆盖去掉缩进
+	margin: 0px;//低端IE浏览器
+}
+
+.main{
+	background-image: url(1.gif);
+	background-repeat: repeat-x;
+	width: 100px;
+}
+
+li{
+	background-color: #eee;
+}
+
+a{
+	text-decoration: none;
+	padding-left: 20px;
+	display: block;
+	width: 80px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.main a{
+	color: white;	
+}
+
+.main li a{
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

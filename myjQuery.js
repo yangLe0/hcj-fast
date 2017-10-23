@@ -74,10 +74,39 @@ $(document).ready(function(){
 });
  */
 
-//menu
-
-
-
+/* //menu(show hide)
+$(document).ready(function(){
+	$(".main>a").click(function(){
+		//alert("点击了")
+		 var ulNode = $(this).next("ul");
+		// if(ulNode.css("display") == "none") {
+			// ulNode.css("display","block");	
+		// } else {
+			// ulNode.css("display","none");
+		// }
+		// ulNode.show();
+		// ulNode.hide();
+		// ulNode.toggle("normal");//参数：数字（时间），slow、normal、fast
+		// ulNode.slideDown();
+		// ulNode.slideUp();
+		ulNode.slideToggle("fast");
+	});
+	
+	$(".hmain").hover(function(){
+		$(this).children("ul").slideDown();
+	}, function(){
+		$(this).children("ul").slideUp();
+	});
+});
+//改图片
+function changeIncon (mainNode) {
+	if(mainNode) {
+		if(mainNode.css("background-image").indexOf("collapse.gif") >= 0){
+			mainNode.css("background-image","url('')");
+	} else {
+		mainNode.css("background-image","url('')");
+	}
+} */
 
 
 

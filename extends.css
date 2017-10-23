@@ -35,7 +35,7 @@ ul{
 	margin: 0px;//低端IE浏览器
 }
 
-.main{
+.main,.hmain{
 	background-image: url(1.gif);
 	background-repeat: repeat-x;
 	width: 100px;
@@ -54,17 +54,26 @@ a{
 	padding-bottom: 3px;
 }
 
-.main a{
+.main a,.hmain a{
 	color: white;	
+//	background-image:url();
+//	background-repeat:
+//	background-position:
 }
 
-.main li a{
+.main li a,.hmain li a{
 	color: black;
+	//background-image:
 }
 
+.main ul,.hmain ul{
+	display: none;
+}
 
-
-
+.hmain{	
+	float: left;
+	margin-right: 1px;
+}
 
 
 

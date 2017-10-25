@@ -9,7 +9,34 @@
 		.ui-selected{
 			background-color: #1c94c4;
 		}
+		<!-- #menu{ -->
+			<!-- width: 100px; -->
+		<!-- } -->
+		.ui-menu: after{
+			content: ".";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+
+		}
+		.ui-menu .ui-menu-item{
+			display: inline-block;
+			float: left;
+			margin: 0;
+			padding: 10;
+			width: auto;
+		}		
 	</style>
+	<script>
+	$(function(){
+			$("#input").spinner();
+			$("#input").spinner("value","10");
+			$("#btn1").on("click",function(){
+				alert($("#input").spinner("value"));
+			});
+		});
+	</script>
 </head>
 <body>
 	<a href="http://www.baidu.com" id="aid">百度按钮</a>
@@ -72,5 +99,56 @@
 	
 	<p>Date:<input type="text" id="datepicker"></p>
 	<a href="#" id="btn1">button</a>
+	<div id="dialog">
+		<p>这是一个对话框Dialog</p>
+	</div>
+	<div id="pb"></div>
+	<br/>
+	
+	<!-- <ul id="menu">
+		<li>
+			<a href="#">java</a>		
+			<ul>
+				<li><a href="#">java ee</a></li>
+				<li><a href="#">java se</a></li>
+				<li><a href="#">java me</a></li>
+			</ul>
+		</li>
+		<li><a>C</a></li>
+		<li>C++</li>
+		<li>PHP</li>
+	</ul> -->
+	<span id="span">0</span>
+	<div id="slider"></div>
+	<br/>
+	<input id="input">
+	<div id="tabs">
+		<ul>
+			<li><a href="#hello1">hello</a></li>
+			<li><a href="#hello2">hello</a></li>
+			<li><a href="#hello3">hello</a></li>
+		</ul>
+		<div id="hello1">
+			hello1
+			hello
+			hello
+			hello
+			hello
+		</div>
+		<div id="hello2">
+			hello1
+			hello
+			hello
+			hello
+			hello
+		</div>
+		<div id="hello3">
+			hello1
+			hello
+			hello
+			hello
+			hello
+		</div>
+	</div>
 </body>
 </html>

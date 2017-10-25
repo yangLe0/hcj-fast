@@ -37,35 +37,76 @@ $(document).ready(function(){
 	$("#sortable").sortable();
 }); */
 
-//accordion逐个展开类似手风琴
+/* //accordion逐个展开类似手风琴
 $(document).ready(function(){
 	$("#accordion").accordion();
-});
+}); */
 
-//autocomplete自动补全
+/* //autocomplete自动补全
 $(document).ready(function(){
 	var autoTags = ["Ann","Ben","html","css","javascript","java"];
 	$("#tags").autocomplete({
 		source: autoTags
 	});
-});
+}); */
 
-//datepicker
+/* //datepicker
 $(document).ready(function(){
 	$("#datepicker").datepicker();
 	$("#btn1").button();
+}); */
+
+/* //dialog
+$(document).ready(function(){
+	$("#btn1").button().on("click",function(){
+		$("#dialog").dialog();
+	});	
+}); */
+
+/* //progressbar进度条
+var pb;
+var max = 100;//最大值
+var current = 0;//
+$(document).ready(function(){
+	// $("#pb").progressbar({value:50});
+	pb = $("#pb");
+	pb.progressbar({max:100})
+	setInterval(changepb,200);
 });
 
+function changepb() {
+	current++;
+	if(current >= 100) {
+		current = 0;
+	}
+	pb.progressbar("option","value",current);
+} */
 
+//menu
+$(document).ready(function(){
+	$("#menu").menu({position:{at:"left bottom"}});
+});
 
+//slider
+var valueSpan,slider;
+$(document).ready(function(){
+	// $("#slider").slider();
+	slider = $("#slider");
+	valueSpan = $("#span");
+	
+	// slider.slider({
+		// change:function (event, ui) {
+			// valueSpan.text(slider.slider("option", "value"));
+		// }
+	// });
+	slider.slider({
+		slide: function (event, ui) {
+			valueSpan.text(slider.slider("option", "value"));
+		}
+	});
+});
 
-
-
-
-
-
-
-
+//spinner下拉列表
 
 
 
